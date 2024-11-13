@@ -30,6 +30,7 @@ const NavBar1 = () => {
         <div className='flex flex-row mr-14 text-center gap-3 font-medium text-[0.8rem] justify-center items-center'>
           <a className="hover:text-[#707073ff]" href='https://www.nike.com/fi/retail?_gl=1*1kzs8we*_up*MQ..&gclid=EAIaIQobChMIjPu60eifiQMVPlORBR2uWSvrEAAYASAAEgIPRvD_BwE&gclsrc=aw.ds'>Find a Store</a>
           <div className='border-r border-spacing-1 border-black h-[12px] w-[1px]'></div>
+
           <p className='hover-trigger hover:text-[#707073ff] cursor-pointer h-[35px] mt-[16px]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Help</p>
           <div className={`bg-white text-black z-20 h-[293px] w-[230px] top-0 rounded-b-lg mt-[35px] mr-[190px] opacity-0 ${isOpen ? 'absolute opacity-100 translate-y-0 ' : 'absolute opacity-0 pointer-events-none translate-y-[-10px]'} transform duration-300`} onMouseEnter={displayDialog} onMouseLeave={removeDialog}>
             <div className='flex flex-col col-span-1 justify-start items-start mx-5 my-3 gap-1'>
@@ -41,6 +42,7 @@ const NavBar1 = () => {
               ))}
             </div>
           </div>
+          
           <div className='border-r border-spacing-1 border-black h-[12px] w-[1px]'></div>
           <a className='hover:text-[#707073ff]' href='https://www.nike.com/fi/membership?_gl=1*9m9sts*_up*MQ..&gclid=EAIaIQobChMIjPu60eifiQMVPlORBR2uWSvrEAAYASAAEgIPRvD_BwE&gclsrc=aw.ds'>Join Us</a>
           <div className='border-r border-spacing-1 border-black h-[12px] w-[1px]'></div>

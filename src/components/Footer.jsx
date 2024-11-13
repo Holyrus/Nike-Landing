@@ -1,7 +1,18 @@
-import React from 'react'
-import { FOOTER_COMPANY, FOOTER_HELP, FOOTER_RESOURCES } from '../constants'
+import React, { useState } from 'react';
+import { FOOTER_COMPANY, FOOTER_GUIDES, FOOTER_HELP, FOOTER_RESOURCES, FOOTER_TERMS } from '../constants'
 
 const Footer = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsOpen(true);
+    }
+
+    const handleMouseLeave = () => {
+        setIsOpen(false);
+    }
+
   return (
     <footer className='flex lg:px-[48px] lg:mt-[60px] lg:pb-[48px]'>
         <div className='hidden lg:flex w-full justify-start items-start flex-col gap-[4.5rem]'>
@@ -44,9 +55,30 @@ const Footer = () => {
 
             </div>
 
-            <div className='w-full h-[75px] flex-row justify-start items-start'>
+            <div className='w-full h-[75px] flex flex-row justify-start items-start gap-x-8 flex-wrap'>
+
                 <p className='text-[14px] text-[#707073ff] font-medium'>© 2024 Nike, Inc. All rights reserved</p>
+
+                <div className='flex flex-row relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <p className='text-[14px] text-[#707073ff] font-medium cursor-default'>Guides</p>
+                    <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M17.5 9.25l-5.5 5.5-5.5-5.5"></path></svg>
                 
+                    <div className={`bg-white w-[200px] h-[215px] rounded-lg shadow-[0px_-4px_4px_rgba(0,0,0,0.02),0px_4px_4px_rgba(0,0,0,0.02),-4px_0px_4px_rgba(0,0,0,0.02),4px_0px_4px_rgba(0,0,0,0.02)] border bottom-0 ${isOpen ? 'absolute opacity-100' : 'absolute opacity-0 pointer-events-none'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        
+                        <div className='flex flex-col w-full col-span-1 justify-start items-start my-2'>
+                            {FOOTER_GUIDES.map((item, index) => (
+                                <a href={item.href} key={index} className='w-full h-[33px] text-[14px] text-[#707073ff] font-medium flex items-center px-3 hover:bg-[#e6e6e6ff] hover:text-black'>{item.title}</a>
+                            ))}
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+                {FOOTER_TERMS.map((item, index) => (
+                    <a href={item.href} key={index} className='text-[14px] text-[#707073ff] hover:text-black font-medium'>{item.title}</a>
+                ))}
+
             </div>
         
         </div>

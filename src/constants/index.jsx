@@ -1226,3 +1226,58 @@ export const FOOTER_COMPANY = [
         href: '#',
     },
 ]
+
+// Footer terms 
+
+export const FOOTER_TERMS = [
+    {
+        title: 'Terms of Use',
+        href: '#',
+    },
+    {
+        title: 'Terms of Sale',
+        href: '#',
+    },
+    {
+        title: 'Company Details',
+        href: '#',
+    },
+    {
+        title: 'Privacy & Cookie Policy',
+        href: '#',
+    },
+    {
+        title: 'Privacy & Cookie Setting',
+        href: '#',
+    },
+]
+
+// Footer guides 
+
+export const FOOTER_GUIDES = [
+    {
+        title: 'Nike Air',
+        href: '#',
+    },
+    {
+        title: 'Nike Air Max',
+        href: '#',
+    },
+    {
+        title: 'Nike FlyEase',
+        href: '#',
+    },
+    {
+        title: 'Nike Pegasus',
+        href: '#',
+    },
+    {
+        title: 'Nike React',
+        href: '#',
+    },
+    {
+        title: 'Nike Vaporfly',
+        href: '#',
+    },
+]
+
