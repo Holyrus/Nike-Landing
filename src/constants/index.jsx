@@ -1281,3 +1281,449 @@ export const FOOTER_GUIDES = [
     },
 ]
 
+// Language modal 
+
+export const MODAL_AFRICA = [
+    {
+        title: 'Egypt',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Morocco',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Maroc',
+        lang: 'Français',
+        href: '#',
+    },
+    {
+        title: 'South Africa',
+        lang: 'English',
+        href: '#',
+    },
+]
+
+export const MODAL_AMERICAS = [
+    {
+        title: 'Argentina',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Brasil',
+        lang: 'Português',
+        href: '#',
+    },
+    {
+        title: 'Canada',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Canada',
+        lang: 'Français',
+        href: '#',
+    },
+    {
+        title: 'Chile',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Colombia',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'México',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Peru',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Puerto Rico',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'United States',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Estados Unidos',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Uruguay',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Latin America',
+        lang: 'Español',
+        href: '#',
+    },
+]
+
+export const MODAL_ASIA = [
+    {
+        title: 'Australia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: '中国大陆',
+        lang: '简体中文',
+        href: '#',
+    },
+    {
+        title: 'Hong Kong',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: '香港',
+        lang: '繁體中文',
+        href: '#',
+    },
+    {
+        title: 'India',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Indonesia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Japan',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: '日本',
+        lang: '日本語',
+        href: '#',
+    },
+    {
+        title: '대한민국',
+        lang: '한국어',
+        href: '#',
+    },
+    {
+        title: 'Malaysia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'New Zealand',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Philippines',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Singapore',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: '台灣',
+        lang: '繁體中文',
+        href: '#',
+    },
+    {
+        title: 'ไทย',
+        lang: 'ภาษาไทย',
+        href: '#',
+    },
+    {
+        title: 'Vietnam',
+        lang: 'English',
+        href: '#',
+    },
+]
+
+export const MODAL_EUROPE = [
+    {
+        title: 'Österreich',
+        lang: 'Deutsch',
+        href: '#',
+    },
+    {
+        title: 'Austria',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Belgien',
+        lang: 'Deutsch',
+        href: '#',
+    },
+    {
+        title: 'Belgium',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Belgique',
+        lang: 'Français',
+        href: '#',
+    },
+    {
+        title: 'België',
+        lang: 'Nederlands',
+        href: '#',
+    },
+    {
+        title: 'Bulgaria',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Croatia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Česká republika',
+        lang: 'Čeština',
+        href: '#',
+    },
+    {
+        title: 'Czech Republic',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Danmark',
+        lang: 'Dansk',
+        href: '#',
+    },
+    {
+        title: 'Denmark',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Finland',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'France',
+        lang: 'Français',
+        href: '#',
+    },
+    {
+        title: 'Deutschland',
+        lang: 'Deutsch',
+        href: '#',
+    },
+    {
+        title: 'Ελλάδα',
+        lang: 'ελληνικά',
+        href: '#',
+    },
+    {
+        title: 'Hungary',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Magyarország',
+        lang: 'Magyar',
+        href: '#',
+    },
+    {
+        title: 'Ireland',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Israel',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Italia',
+        lang: 'Italiano',
+        href: '#',
+    },
+    {
+        title: 'Luxemburg',
+        lang: 'Deutsch',
+        href: '#',
+    },
+    {
+        title: 'Luxembourg',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Luxembourg',
+        lang: 'Français',
+        href: '#',
+    },
+    {
+        title: 'Netherlands',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Nederland',
+        lang: 'Nederlands',
+        href: '#',
+    },
+    {
+        title: 'Norway',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Norge',
+        lang: 'Norsk',
+        href: '#',
+    },
+    {
+        title: 'Polska',
+        lang: 'Polski',
+        href: '#',
+    },
+    {
+        title: 'Portugal',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Portugal',
+        lang: 'Português',
+        href: '#',
+    },
+    {
+        title: 'Romania',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Россия',
+        lang: 'Русский',
+        href: '#',
+    },
+    {
+        title: 'Slovakia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Slovenia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Espanya',
+        lang: 'Català',
+        href: '#',
+    },
+    {
+        title: 'España',
+        lang: 'Español',
+        href: '#',
+    },
+    {
+        title: 'Sweden',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Sverige',
+        lang: 'Svenska',
+        href: '#',
+    },
+    {
+        title: 'Schweiz',
+        lang: 'Deutsch',
+        href: '#',
+    },
+    {
+        title: 'Switzerland',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        title: 'Suisse',
+        lang: 'Français',
+        href: '#',
+    },
+    {
+        title: 'Svizzera',
+        lang: 'Italiano',
+        href: '#',
+    },
+    {
+        title: 'Türkiye',
+        lang: 'Türkçe',
+        href: '#',
+    },
+    {
+        title: 'United Kingdom',
+        lang: 'English',
+        href: '#',
+    },
+]
+
+export const MODAL_EAST = [
+    {
+        title: 'Saudi Arabia',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        arabtitle: 'المملكة العربية السعودية',
+        arablang: 'العربية',
+        href: '#',
+    },
+    {
+        title: 'United Arab Emirates',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        arabtitle: 'الإمارات العربية المتحدة',
+        arablang: 'العربية',
+        href: '#',
+    },
+    {
+        title: 'Qatar',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        arabtitle: 'دولة قطر',
+        arablang: 'العربية',
+        href: '#',
+    },
+    {
+        title: 'Kuwait',
+        lang: 'English',
+        href: '#',
+    },
+    {
+        arabtitle: 'الكويت',
+        arablang: 'العربية',
+        href: '#',
+    },
+]
