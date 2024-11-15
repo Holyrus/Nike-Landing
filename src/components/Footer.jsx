@@ -13,8 +13,88 @@ const Footer = ({ openModal }) => {
         setIsOpen(false);
     }
 
+    const [isDetailsOpen1, setIsDetailsOpen1] = useState(true);
+
+    const toggleOpen1 = () => {
+        setIsDetailsOpen1(!isDetailsOpen1);
+    }
+
+    const [isDetailsOpen2, setIsDetailsOpen2] = useState(false);
+
+    const toggleOpen2 = () => {
+        setIsDetailsOpen2(!isDetailsOpen2);
+    }
+
+    const [isDetailsOpen3, setIsDetailsOpen3] = useState(false);
+
+    const toggleOpen3 = () => {
+        setIsDetailsOpen3(!isDetailsOpen3);
+    }
+
   return (
-    <footer className='flex lg:px-[48px] lg:mt-[60px] lg:pb-[48px]'>
+    <footer className='flex px-[24px] mt-[34px] pb-[48px] lg:px-[48px] lg:mt-[60px] lg:pb-[48px]'>
+
+        {/* Mobile footer  */}
+
+        <div className='lg:hidden flex flex-col gap-3 justify-start items-start w-full'>
+            
+            <div className='flex flex-col justify-start items-start w-full'> 
+
+                <details open={true} onClick={toggleOpen1} className='flex flex-col flex-nowrap w-full border-b-[1.5px] border-[#e6e6e6ff]'>
+                    <summary className='flex items-center justify-between h-[72px] cursor-pointer'>
+                        <span className='text-[15px] font-medium'>Resources</span>
+                        <span className=''>
+                            <svg className={`${isDetailsOpen1 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen1 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                        </span>
+                    </summary>
+                    <div className='overflow-hidden flex flex-nowrap flex-col mb-8'>
+                    {FOOTER_RESOURCES.map((item, index) => (
+                        <a href={item.href} key={index} className='text-[#707073] font-medium text-[14px] hover:text-black pb-3'>{item.title}</a>
+                    ))}
+                    </div>
+                </details>
+
+                <details open={false} onClick={toggleOpen2} className='flex flex-col flex-nowrap w-full border-b-[1.5px] border-[#e6e6e6ff]'>
+                    <summary className='flex items-center justify-between h-[72px] cursor-pointer'>
+                        <span className='text-[15px] font-medium'>Help</span>
+                        <span className=''>
+                            <svg className={`${isDetailsOpen2 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen2 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                        </span>
+                    </summary>
+                    <div className='overflow-hidden flex flex-nowrap flex-col mb-8'>
+                    {FOOTER_HELP.map((item, index) => (
+                        <a href={item.href} key={index} className='text-[#707073] font-medium text-[14px] hover:text-black pb-3'>{item.title}</a>
+                    ))}
+                    </div>
+                </details>
+
+                <details open={false} onClick={toggleOpen3} className='flex flex-col flex-nowrap w-full border-b-[1.5px] border-[#e6e6e6ff]'>
+                    <summary className='flex items-center justify-between h-[72px] cursor-pointer'>
+                        <span className='text-[15px] font-medium'>Company</span>
+                        <span className=''>
+                            <svg className={`${isDetailsOpen3 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen3 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                        </span>
+                    </summary>
+                    <div className='overflow-hidden flex flex-nowrap flex-col mb-8'>
+                    {FOOTER_COMPANY.map((item, index) => (
+                        <a href={item.href} key={index} className='text-[#707073] font-medium text-[14px] hover:text-black pb-3'>{item.title}</a>
+                    ))}
+                    </div>
+                </details>
+
+            </div>
+
+            <div className=''>
+
+            </div>
+
+        </div>
+
+        {/* Desktop footer  */}
+
         <div className='hidden lg:flex w-full justify-start items-start flex-col gap-[4.5rem]'>
             
             <div className='w-full h-[275px] flex flex-row justify-start items-start gap-3'>

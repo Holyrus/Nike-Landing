@@ -14,7 +14,7 @@ const MerchMenu = () => {
   }
 
   return (
-    <section className='flex justify-start items-start sm:justify-center sm:items-start border-b-[1.5px] border-[#e6e6e6ff] mt-[45px] pb-[80px] sm:pb-[60px] lg:pb-[100px] mx-6 sm:mx-12'>
+    <section className='flex justify-start items-start sm:justify-center sm:items-start border-b-[1.5px] border-[#e6e6e6ff] mt-[45px] pb-[80px] sm:pb-[60px] lg:pb-[100px] mx-6 sm:mx-6 sm:px-6'>
         
         <div className='hidden sm:flex md:flex lg:flex flex-row flex-nowrap justify-start items-start sm:gap-5 md:gap-14' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 
