@@ -1,5 +1,5 @@
 import { LATEST } from "../constants"
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import useMediaQuery from "../constants/useMediaQuery";
 
 const LatestSection = () => {
@@ -67,14 +67,14 @@ const LatestSection = () => {
                     onClick={() => scroll('left')}
                     disabled={isLeftDisabled}
                     className={`p-3 rounded-full ${isLeftDisabled ? 'bg-[#f5f5f5ff] text-[#a7a7a8ff] cursor-default' : 'bg-[#e6e6e6ff]'}`}>
-                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path></svg>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path></svg>
                 </button>
 
                 <button
                     onClick={() => scroll('right')}
                     disabled={isRightDisabled}
                     className={`p-3 rounded-full ${isRightDisabled ? 'bg-[#f5f5f5ff] text-[#a7a7a8ff] cursor-default' : 'bg-[#e6e6e6ff]'}`}>
-                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg>
                 </button>
             </div>
 

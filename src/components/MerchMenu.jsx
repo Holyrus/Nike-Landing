@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MERCH_CLOTHING, MERCH_FEATURED, MERCH_FEATURED_EXPAND, MERCH_KIDS, MERCH_SHOES } from '../constants'
 
 const MerchMenu = () => {

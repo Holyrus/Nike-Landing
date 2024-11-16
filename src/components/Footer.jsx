@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FOOTER_COMPANY, FOOTER_GUIDES, FOOTER_HELP, FOOTER_RESOURCES, FOOTER_TERMS } from '../constants'
 
 const Footer = ({ openModal, openMobileModal }) => {
@@ -44,8 +44,8 @@ const Footer = ({ openModal, openMobileModal }) => {
                     <summary className='flex items-center justify-between h-[72px] cursor-pointer'>
                         <span className='text-[15px] font-medium'>Resources</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen1 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen1 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen1 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen1 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden flex flex-nowrap flex-col mb-8'>
@@ -59,8 +59,8 @@ const Footer = ({ openModal, openMobileModal }) => {
                     <summary className='flex items-center justify-between h-[72px] cursor-pointer'>
                         <span className='text-[15px] font-medium'>Help</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen2 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen2 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen2 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen2 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden flex flex-nowrap flex-col mb-8'>
@@ -74,8 +74,8 @@ const Footer = ({ openModal, openMobileModal }) => {
                     <summary className='flex items-center justify-between h-[72px] cursor-pointer'>
                         <span className='text-[15px] font-medium'>Company</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen3 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen3 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen3 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen3 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden flex flex-nowrap flex-col mb-8'>
@@ -87,7 +87,7 @@ const Footer = ({ openModal, openMobileModal }) => {
 
                 <div className='flex flex-col flex-nowrap w-full border-b-[1.5px] h-[72px] items-start justify-center border-[#e6e6e6ff]'>
                     <button onClick={openMobileModal} className='flex flex-row justify-between items-center text-[14px] gap-1 text-[#707073ff] font-medium'>
-                        <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="16px" height="16px" fill="none"><path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" d="M21.75 12A9.75 9.75 0 0112 21.75M21.75 12A9.75 9.75 0 0012 2.25M21.75 12c0 2.071-4.365 3.75-9.75 3.75S2.25 14.071 2.25 12m19.5 0c0-2.071-4.365-3.75-9.75-3.75S2.25 9.929 2.25 12M12 21.75A9.75 9.75 0 012.25 12M12 21.75c2.9 0 5.25-4.365 5.25-9.75S14.9 2.25 12 2.25m0 19.5c-2.9 0-5.25-4.365-5.25-9.75S9.1 2.25 12 2.25M2.25 12A9.75 9.75 0 0112 2.25"></path></svg>
+                        <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="16px" height="16px" fill="none"><path stroke="currentColor" strokeMiterlimit="10" strokeWidth="1.5" d="M21.75 12A9.75 9.75 0 0112 21.75M21.75 12A9.75 9.75 0 0012 2.25M21.75 12c0 2.071-4.365 3.75-9.75 3.75S2.25 14.071 2.25 12m19.5 0c0-2.071-4.365-3.75-9.75-3.75S2.25 9.929 2.25 12M12 21.75A9.75 9.75 0 012.25 12M12 21.75c2.9 0 5.25-4.365 5.25-9.75S14.9 2.25 12 2.25m0 19.5c-2.9 0-5.25-4.365-5.25-9.75S9.1 2.25 12 2.25M2.25 12A9.75 9.75 0 0112 2.25"></path></svg>
                         Finland
                     </button>
                 </div>
@@ -100,7 +100,7 @@ const Footer = ({ openModal, openMobileModal }) => {
 
                 <div className='flex flex-row relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <p className='text-[14px] text-[#707073ff] font-medium cursor-default flex justify-center items-center'>Guides</p>
-                    <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M17.5 9.25l-5.5 5.5-5.5-5.5"></path></svg>
+                    <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M17.5 9.25l-5.5 5.5-5.5-5.5"></path></svg>
                 
                     <div className={`bg-white w-[200px] h-[215px] rounded-lg shadow-[0px_-4px_4px_rgba(0,0,0,0.02),0px_4px_4px_rgba(0,0,0,0.02),-4px_0px_4px_rgba(0,0,0,0.02),4px_0px_4px_rgba(0,0,0,0.02)] border bottom-0 ${isOpen ? 'absolute opacity-100' : 'absolute opacity-0 pointer-events-none'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         
@@ -157,7 +157,7 @@ const Footer = ({ openModal, openMobileModal }) => {
 
                 <div className='flex flex-row justify-end items-start flex-1 pl-16 h-full'>
                     <button onClick={openModal} className='flex flex-row justify-between items-center text-[14px] gap-1 text-[#707073ff] font-medium'>
-                        <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="16px" height="16px" fill="none"><path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" d="M21.75 12A9.75 9.75 0 0112 21.75M21.75 12A9.75 9.75 0 0012 2.25M21.75 12c0 2.071-4.365 3.75-9.75 3.75S2.25 14.071 2.25 12m19.5 0c0-2.071-4.365-3.75-9.75-3.75S2.25 9.929 2.25 12M12 21.75A9.75 9.75 0 012.25 12M12 21.75c2.9 0 5.25-4.365 5.25-9.75S14.9 2.25 12 2.25m0 19.5c-2.9 0-5.25-4.365-5.25-9.75S9.1 2.25 12 2.25M2.25 12A9.75 9.75 0 0112 2.25"></path></svg>
+                        <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="16px" height="16px" fill="none"><path stroke="currentColor" strokeMiterlimit="10" strokeWidth="1.5" d="M21.75 12A9.75 9.75 0 0112 21.75M21.75 12A9.75 9.75 0 0012 2.25M21.75 12c0 2.071-4.365 3.75-9.75 3.75S2.25 14.071 2.25 12m19.5 0c0-2.071-4.365-3.75-9.75-3.75S2.25 9.929 2.25 12M12 21.75A9.75 9.75 0 012.25 12M12 21.75c2.9 0 5.25-4.365 5.25-9.75S14.9 2.25 12 2.25m0 19.5c-2.9 0-5.25-4.365-5.25-9.75S9.1 2.25 12 2.25M2.25 12A9.75 9.75 0 0112 2.25"></path></svg>
                         Finland
                     </button>
                 </div>
@@ -170,7 +170,7 @@ const Footer = ({ openModal, openMobileModal }) => {
 
                 <div className='flex flex-row relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <p className='text-[14px] text-[#707073ff] font-medium cursor-default'>Guides</p>
-                    <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M17.5 9.25l-5.5 5.5-5.5-5.5"></path></svg>
+                    <svg className='text-[#707073ff]' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M17.5 9.25l-5.5 5.5-5.5-5.5"></path></svg>
                 
                     <div className={`bg-white w-[200px] h-[215px] rounded-lg shadow-[0px_-4px_4px_rgba(0,0,0,0.02),0px_4px_4px_rgba(0,0,0,0.02),-4px_0px_4px_rgba(0,0,0,0.02),4px_0px_4px_rgba(0,0,0,0.02)] border bottom-0 ${isOpen ? 'absolute opacity-100' : 'absolute opacity-0 pointer-events-none'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         

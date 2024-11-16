@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { MODAL_AFRICA, MODAL_AMERICAS, MODAL_ASIA, MODAL_EAST, MODAL_EUROPE } from '../constants';
 import useMediaQuery from "../constants/useMediaQuery";
 
@@ -24,7 +24,7 @@ const LanguageModal = ({ isOpen, onClose }) => {
     <section className='hidden fixed inset-0 bg-white lg:flex flex-col items-start justify-start xl:items-center z-50 overflow-y-scroll hide-scrollbar'>
       
       <button onClick={onClose} className='fixed right-7 top-11 bg-black rounded-full p-[6px] hover:bg-[#ccccccff]'>
-            <svg className='text-white' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"></path></svg>
+            <svg className='text-white' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"></path></svg>
       </button>
       
       <div className='flex justify-center items-start w-full pt-10 px-28 pl-6'>
@@ -53,9 +53,9 @@ const LanguageModal = ({ isOpen, onClose }) => {
                             height="30"
                         >
                             <path 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                stroke-width="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="2" 
                                 d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                             />
                         </svg>
@@ -93,9 +93,9 @@ const LanguageModal = ({ isOpen, onClose }) => {
                             height="30"
                         >
                             <path 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                stroke-width="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="2" 
                                 d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                             />
                         </svg>
@@ -133,9 +133,9 @@ const LanguageModal = ({ isOpen, onClose }) => {
                             height="30"
                         >
                             <path 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                stroke-width="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="2" 
                                 d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                             />
                         </svg>
@@ -173,9 +173,9 @@ const LanguageModal = ({ isOpen, onClose }) => {
                             height="30"
                         >
                             <path 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                stroke-width="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="2" 
                                 d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                             />
                         </svg>
@@ -213,9 +213,9 @@ const LanguageModal = ({ isOpen, onClose }) => {
                             height="30"
                         >
                             <path 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                stroke-width="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="2" 
                                 d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                             />
                         </svg>

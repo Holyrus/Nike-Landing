@@ -1,5 +1,5 @@
 import JordanLogo from '../assets/JordanLogo.png';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { HELP_PROP } from '../constants/index.jsx';
 
 

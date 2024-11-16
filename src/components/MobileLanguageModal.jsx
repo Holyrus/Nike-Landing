@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { MODAL_AFRICA, MODAL_AMERICAS, MODAL_ASIA, MODAL_EAST, MODAL_EUROPE } from '../constants';
 import useMediaQuery from "../constants/useMediaQuery";
 
@@ -63,7 +63,7 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
     <section className='lg:hidden fixed inset-0 bg-white flex flex-col items-center justify-start z-50 overflow-y-scroll hide-scrollbar'>
       
       <button onClick={closingMobileModal} className='fixed z-50 right-7 top-11 bg-black rounded-full p-[6px] hover:bg-[#ccccccff]'>
-            <svg className='text-white' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"></path></svg>
+            <svg className='text-white' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"></path></svg>
       </button>
       
       <div className='flex justify-center items-start w-full pt-10 px-5 pr-16'>
@@ -76,8 +76,8 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                     <summary className='flex items-center justify-between h-[88px] cursor-pointer'>
                         <span className='text-[24px] font-medium'>Africa</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen1 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen1 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen1 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen1 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden w-full flex flex-nowrap gap-3 flex-col mb-8'>
@@ -94,9 +94,9 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                                 height="30"
                             >
                                 <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    stroke-width="2" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    strokeWidth="2" 
                                     d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                                 />
                             </svg>
@@ -115,8 +115,8 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                     <summary className='flex items-center justify-between h-[88px] cursor-pointer'>
                         <span className='text-[24px] font-medium'>Americas</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen2 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen2 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen2 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen2 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden w-full flex flex-nowrap gap-3 flex-col mb-8'>
@@ -133,9 +133,9 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                                 height="30"
                             >
                                 <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    stroke-width="2" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    strokeWidth="2" 
                                     d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                                 />
                             </svg>
@@ -154,8 +154,8 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                     <summary className='flex items-center justify-between h-[88px] cursor-pointer'>
                         <span className='text-[24px] font-medium'>Asia Pacific</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen3 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen3 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen3 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen3 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden w-full flex flex-nowrap gap-3 flex-col mb-8'>
@@ -172,9 +172,9 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                                 height="30"
                             >
                                 <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    stroke-width="2" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    strokeWidth="2" 
                                     d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                                 />
                             </svg>
@@ -193,8 +193,8 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                     <summary className='flex items-center justify-between h-[88px] cursor-pointer'>
                         <span className='text-[24px] font-medium'>Europe</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen4 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen4 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen4 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen4 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden w-full flex flex-nowrap gap-3 flex-col mb-8'>
@@ -211,9 +211,9 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                                 height="30"
                             >
                                 <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    stroke-width="2" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    strokeWidth="2" 
                                     d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                                 />
                             </svg>
@@ -232,8 +232,8 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                     <summary className='flex items-center justify-between h-[88px] cursor-pointer'>
                         <span className='text-[24px] font-medium'>Middle East</span>
                         <span className=''>
-                            <svg className={`${isDetailsOpen5 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
-                            <svg className={`rotate-180 ${isDetailsOpen5 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
+                            <svg className={`${isDetailsOpen5 ? 'hidden' : 'block'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg>
+                            <svg className={`rotate-180 ${isDetailsOpen5 ? 'block' : 'hidden'}`} aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.966 8.476L12 15.443 5.033 8.476"></path></svg> 
                         </span>
                     </summary>
                     <div className='overflow-hidden w-full flex flex-nowrap gap-3 flex-col mb-8'>
@@ -250,9 +250,9 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
                                     height="30"
                                 >
                                     <path 
-                                        stroke-linecap="round" 
-                                        stroke-linejoin="round" 
-                                        stroke-width="2" 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        strokeWidth="2" 
                                         d="M12 2C8.134 2 5 5.134 5 9c0 4.926 6.103 11.021 6.312 11.234a1.2 1.2 0 0 0 1.376 0C12.897 20.021 19 13.926 19 9c0-3.866-3.134-7-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" 
                                     />
                                 </svg>
