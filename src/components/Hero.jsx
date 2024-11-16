@@ -4,7 +4,7 @@ const Hero = () => {
 
 
   return (
-    <section className="w-full relative bg-white overflow-hidden h-[82vh] sm:h-[65vh] md:h-[65vh] lg:h-[80vh]">
+    <section className="w-full relative bg-white overflow-hidden h-[82vh] sm:h-[65vh] md:h-[65vh] lg:h-[80vh] xl:h-[65vh]">
         
         <video
           src={NikeVideo}

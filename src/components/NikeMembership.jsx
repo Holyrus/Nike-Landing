@@ -12,16 +12,19 @@ const NikeMembership = () => {
 
   const isMediumScreen = useMediaQuery('(min-width: 768px)');
   const isLargeScreen = useMediaQuery('(min-width: 1024px)');
+  const isXLScreen = useMediaQuery('(min-width: 1280px)');
 
   useEffect(() => {
-    if (isLargeScreen) {
+    if (isXLScreen) {
+      setCurrentAmount(590);
+    } else if (isLargeScreen) {
       setCurrentAmount(394);
     } else if (isMediumScreen) {
       setCurrentAmount(700);
     } else {
       setCurrentAmount(300);
     }
-  }, [isMediumScreen, isLargeScreen]);
+  }, [isMediumScreen, isLargeScreen, isXLScreen]);
 
   const scroll = (direction) => {
     if (!scrollContainerRef.current) return;
@@ -83,7 +86,7 @@ const NikeMembership = () => {
             className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 overflow-x-scroll scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {NIKE_MEMBERSHIP.map((item, index) => (
                 <a href={item.href} key={index} className="relative w-auto h-auto object-cover flex-shrink-0">
-                    <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px]`}/>
+                    <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px] xl:w-[570px] xl:h-[570px]`}/>
                     <div className="absolute flex gap-2 flex-col left-6 bottom-[5.3rem] md:left-6 md:bottom-[5.3rem] lg:left-12 lg:bottom-[6.8rem]">
                       <p className="text-white text-[16px] font-medium">{item.category}</p>
                       <p className="text-white text-[24px] font-medium pr-[2.8rem] leading-7">{item.title}</p>

@@ -12,16 +12,19 @@ const ShopIcons = () => {
 
   const isMediumScreen = useMediaQuery('(min-width: 768px)');
   const isLargeScreen = useMediaQuery('(min-width: 1024px)');
+  const isXLScreen = useMediaQuery('(min-width: 1280px)');
 
   useEffect(() => {
-    if (isLargeScreen) {
+    if (isXLScreen) {
+      setCurrentAmount(590);
+    } else if (isLargeScreen) {
       setCurrentAmount(440);
     } else if (isMediumScreen) {
       setCurrentAmount(700);
     } else {
       setCurrentAmount(300);
     }
-  }, [isMediumScreen, isLargeScreen]);
+  }, [isMediumScreen, isLargeScreen, isXLScreen]);
 
   const scroll = (direction) => {
     if (!scrollContainerRef.current) return;
@@ -81,8 +84,8 @@ const ShopIcons = () => {
             ref={scrollContainerRef}
             className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 overflow-x-scroll scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {SHOP_ICONS.map((item, index) => (
-                <a href={item.href} key={index} className="relative w-[300px] h-[300px] md:w-[680px] md:h-[465px] lg:w-[440px] lg:h-[300px] object-cover flex-shrink-0">
-                    <img src={item.image} alt={item.title} className={`object-cover w-full h-full md:w-[680px] md:h-[465px] lg:w-[440px] lg:h-[300px]`}/>
+                <a href={item.href} key={index} className="relative w-[300px] h-[300px] md:w-[680px] md:h-[465px] lg:w-[440px] lg:h-[300px] xl:w-[570px] xl:h-[390px] object-cover flex-shrink-0">
+                    <img src={item.image} alt={item.title} className={`object-cover w-full h-full md:w-[680px] md:h-[465px] lg:w-[440px] lg:h-[300px] xl:w-[570px] xl:h-[390px]`}/>
                     <a href={item.href} className="absolute bottom-6 left-6 lg:bottom-12 lg:left-12 bg-white rounded-full text-black hover:bg-[#bdbdbdff] px-[16px] py-[6px] font-medium">{item.title}</a>
                 </a>
             ))}

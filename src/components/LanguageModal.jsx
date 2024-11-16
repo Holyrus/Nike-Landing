@@ -21,7 +21,7 @@ const LanguageModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <section className='hidden fixed inset-0 bg-white lg:flex flex-col items-start justify-start z-50 overflow-y-scroll hide-scrollbar'>
+    <section className='hidden fixed inset-0 bg-white lg:flex flex-col items-start justify-start xl:items-center z-50 overflow-y-scroll hide-scrollbar'>
       
       <button onClick={onClose} className='fixed right-7 top-11 bg-black rounded-full p-[6px] hover:bg-[#ccccccff]'>
             <svg className='text-white' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"></path></svg>
@@ -31,7 +31,7 @@ const LanguageModal = ({ isOpen, onClose }) => {
         <p className='text-black text-[32px] font-medium'>Select your Location</p>
       </div>
     
-      <div className='flex flex-col justify-start items-start w-full px-36 pb-36'>
+      <div className='flex flex-col justify-start items-start w-full px-36 pb-36 xl:w-[80rem]'>
 
         <div className='flex flex-col justify-start items-start w-full pt-12 pl-8'>
 

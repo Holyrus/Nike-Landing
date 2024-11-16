@@ -12,16 +12,19 @@ const NewInThisWeek = () => {
 
   const isMediumScreen = useMediaQuery('(min-width: 768px)');
   const isLargeScreen = useMediaQuery('(min-width: 1024px)');
+  const isXLScreen = useMediaQuery('(min-width: 1280px)');
 
   useEffect(() => {
-    if (isLargeScreen) {
+    if (isXLScreen) {
+      setCurrentAmount(590);
+    } else if (isLargeScreen) {
       setCurrentAmount(394);
     } else if (isMediumScreen) {
       setCurrentAmount(694);
     } else {
       setCurrentAmount(300);
     }
-  }, [isMediumScreen, isLargeScreen]);
+  }, [isMediumScreen, isLargeScreen, isXLScreen]);
 
   const scroll = (direction) => {
     if (!scrollContainerRef.current) return;
@@ -83,8 +86,8 @@ const NewInThisWeek = () => {
             ref={scrollContainerRef}
             className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 overflow-x-scroll scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {NEW_IN_THIS_WEEK.map((item, index) => (
-                <a href={item.href} key={index} className="relative w-[auto] h-[auto] md:w-[auto] md:h-[auto] lg:w-[auto] lg:h-[auto] object-cover flex-shrink-0">
-                    <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px]`}/>
+                <a href={item.href} key={index} className="relative w-[auto] h-[auto] md:w-[auto] md:h-[auto] lg:w-[auto] lg:h-[auto] xl:w-[570px] object-cover flex-shrink-0">
+                    <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px] xl:w-[570px] xl:h-[570px]`}/>
                     <p className="mt-2 font-medium md:text-[14px] lg:text-[16px]">{item.title}</p>
                     <p className="text-[#707073ff] md:text-[14px] lg:text-[16px]">{item.category}</p>
                     <p className="font-medium mt-2 md:text-[14px] lg:text-[16px]">{item.price}</p>

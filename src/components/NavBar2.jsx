@@ -748,7 +748,7 @@ const NavBar2 = () => {
 
         {/* Search Menu Appearing functionality */}
 
-        <div className={`z-[20] absolute flex flex-col justify-start items-start gap-[30px] bg-white w-full h-[100vh] lg:h-[87vh] top-[35px] lg:top-0 opacity-0 ${lastScrollY > 35 ? 'lg:top-[35px]' : ''} ${isSearchOpen ? 'absolute opacity-100 -translate-y-[35px]' : 'absolute opacity-0 pointer-events-none'} transition-transform duration-200 ease-in-out`}>
+        <div className={`z-[20] absolute flex flex-col justify-start items-start gap-[30px] bg-white w-full h-[100vh] lg:h-[87vh] xl:h-[50vh] top-[35px] lg:top-0 opacity-0 ${lastScrollY > 35 ? 'lg:top-[35px]' : ''} ${isSearchOpen ? 'absolute opacity-100 -translate-y-[35px]' : 'absolute opacity-0 pointer-events-none'} transition-transform duration-200 ease-in-out`}>
             
             {/* Navbar search */}
 
