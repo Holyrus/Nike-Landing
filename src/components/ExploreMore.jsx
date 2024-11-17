@@ -83,9 +83,9 @@ const ExploreMore = () => {
 
         <div 
             ref={scrollContainerRef}
-            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 overflow-x-scroll scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
+            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[420px] sm:h-[420px] md:h-[895px] lg:h-[525px] xl:h-[765px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {EXPLORE_MORE.map((item, index) => (
-                <a href={item.href} key={index} className="relative w-[auto] h-[auto] md:w-[auto] md:h-[auto] lg:w-[auto] lg:h-[auto] object-cover flex-shrink-0">
+                <a href={item.href} key={index} className="relative w-[300px] h-[375px] md:w-[680px] md:h-[850px] lg:w-[380px] lg:h-[480px] xl:w-[570px] xl:h-[720px] object-cover flex-shrink-0">
                     <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[375px] md:w-[680px] md:h-[850px] lg:w-[380px] lg:h-[480px] xl:w-[570px] xl:h-[720px]`}/>
                     <a href={item.href} className="absolute bottom-6 left-6 lg:bottom-12 lg:left-12 bg-white rounded-full text-black hover:bg-[#bdbdbdff] px-[16px] py-[6px] font-medium">{item.title}</a>
                 </a>
