@@ -83,7 +83,7 @@ const NikeMembership = () => {
 
         <div 
             ref={scrollContainerRef}
-            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[345px] sm:h-[345px] md:h-[725px] lg:h-[425px] xl:h-[615px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
+            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[347px] sm:h-[347px] md:h-[727px] lg:h-[427px] xl:h-[617px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {NIKE_MEMBERSHIP.map((item, index) => (
                 <a href={item.href} key={index} className="relative w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px] xl:w-[570px] xl:h-[570px] object-cover flex-shrink-0">
                     <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px] xl:w-[570px] xl:h-[570px]`}/>
