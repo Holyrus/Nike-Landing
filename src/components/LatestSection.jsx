@@ -82,7 +82,7 @@ const LatestSection = () => {
 
         <div 
             ref={scrollContainerRef}
-            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[470px] md:h-[945px] lg:h-[575px] xl:h-[825px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
+            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[472px] md:h-[947px] lg:h-[577px] xl:h-[827px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {LATEST.map((item, index) => (
                 <a href={item.href} key={index} className="w-[300px] h-[423px] md:w-[680px] md:h-[900px] lg:w-[380px] lg:h-[530px] xl:w-[570px] xl:h-[780px] object-cover flex-shrink-0">
                     <img src={item.image} alt={item.title} className={`w-[300px] h-[375px] md:w-[680px] md:h-[850px] lg:w-[400px] lg:h-[480px] xl:w-[570px] xl:h-[720px]`}/>
