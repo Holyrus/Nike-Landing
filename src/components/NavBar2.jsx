@@ -252,6 +252,39 @@ const NavBar2 = () => {
 
     // -------------------------------
 
+    //Canceling search bar by 'esc'
+
+    useEffect(() => {
+      const handleKeyDown = (event) => {
+        if (event.key === "Escape" && isSearchOpen) {
+          searchCancelHandler();
+        }
+      };
+
+      window.addEventListener("keydown", handleKeyDown);
+
+      return () => {
+        window.removeEventListener("keydown", handleKeyDown);
+      }
+    }, [isSearchOpen]);
+
+    // -------------------------------
+
+    //Autofocus when search bar is appeard
+
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+      if (isSearchOpen && inputRef.current) {
+        inputRef.current.focus();
+      } else if (!isSearchOpen && inputRef.current) {
+        inputRef.current.blur();
+      }
+
+    }, [isSearchOpen]);
+
+    // -------------------------------
+
     
   return (
     <section className={`w-full z-10 bg-white h-[62px]`}>
@@ -784,6 +817,7 @@ const NavBar2 = () => {
 
                   {/* Input Field */}
                       <input
+                        ref={inputRef}
                         type="text"
                         value={searchValue}
                         onChange={handleInputChange}
