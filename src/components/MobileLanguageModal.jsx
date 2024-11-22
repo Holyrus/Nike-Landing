@@ -66,8 +66,8 @@ const MobileLanguageModal = ({ isOpenMobile, onCloseMobile }) => {
             <svg className='text-white' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" strokeWidth="1.5" d="M18.973 5.027L5.028 18.972m0-13.945l13.944 13.945"></path></svg>
       </button>
       
-      <div className='flex justify-center items-start w-full pt-10 px-5 pr-16'>
-        <p className='text-black text-[32px] font-medium text-center leading-10'>Select your Location</p>
+      <div className='flex justify-center items-start w-full pt-10 px-5 pr-[80px]'>
+        <p className='text-black text-[32px] font-medium text-center leading-10 w-['>Select your Location</p>
       </div>
 
       <div className='flex flex-col justify-start items-start w-full px-6 mt-7 mb-14'> 
