@@ -84,7 +84,7 @@ const NewInThisWeek = () => {
 
         <div 
             ref={scrollContainerRef}
-            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[434px] sm:h-[434px] md:h-[804px] lg:h-[514px] xl:h-[704px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
+            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[434px] sm:h-[434px] md:h-[804px] lg:h-[514px] xl:h-[704px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {NEW_IN_THIS_WEEK.map((item, index) => (
                 <a href={item.href} key={index} className="relative w-[auto] h-[auto] md:w-[auto] md:h-[auto] lg:w-[auto] lg:h-[auto] xl:w-[570px] object-cover flex-shrink-0">
                     <img src={item.image} alt={item.title} className={`object-cover w-[300px] h-[300px] md:w-[680px] md:h-[680px] lg:w-[380px] lg:h-[380px] xl:w-[570px] xl:h-[570px]`}/>

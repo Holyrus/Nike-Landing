@@ -82,7 +82,7 @@ const ShopIcons = () => {
 
         <div 
             ref={scrollContainerRef}
-            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[345px] md:h-[510px] lg:h-[345px] xl:h-[435px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
+            className="pb-[30px] px-[24px] lg:px-[48px] w-full flex flex-row flex-nowrap gap-3 h-[345px] md:h-[510px] lg:h-[345px] xl:h-[435px] overflow-x-scroll scrollbar-none hover:scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#8c8c8cff]">
             {SHOP_ICONS.map((item, index) => (
                 <a href={item.href} key={index} className="relative w-[300px] h-[300px] md:w-[680px] md:h-[465px] lg:w-[440px] lg:h-[300px] xl:w-[570px] xl:h-[390px] object-cover flex-shrink-0">
                     <img src={item.image} alt={item.title} className={`object-cover w-full h-full md:w-[680px] md:h-[465px] lg:w-[440px] lg:h-[300px] xl:w-[570px] xl:h-[390px]`}/>
